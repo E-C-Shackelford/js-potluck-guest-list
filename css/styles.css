@@ -1,1 +1,156 @@
+* {
+  box-sizing: border-box;
+}
 
+html {
+  height: 150%;
+}
+
+body {
+  align-items: center;
+  background-image: #fff;
+  color: rgb(46, 42, 42);
+  display: flex;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  justify-content: center;
+  margin: 0;
+  margin-top: 3rem;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.attendees {
+  font-weight: bold;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 1.5em;
+  justify-content: center;
+  max-width: 1000px;
+  width: 90%;
+}
+
+.hide {
+  display: none;
+}
+
+header {
+  width: 100%;
+}
+
+h1 {
+  font-family: "Oswald", sans-serif;
+  font-size: 2.25em;
+}
+
+.add-guest,
+.guest-list-container {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.add-guest {
+  margin-top: 1em;
+}
+
+.add-guest label {
+  margin-bottom: 1em;
+}
+
+.add-guest input {
+  padding: 0.25em;
+}
+
+.fa-envelope {
+  color: #ccc;
+}
+
+button {
+  align-self: center;
+  background-color: tomato;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  font-size: 1em;
+  font-weight: bold;
+  margin: 2em 0;
+  padding: 0.5em 1.5em;
+  text-transform: uppercase;
+}
+
+button:hover {
+  filter: brightness(85%);
+}
+
+button:active {
+  transform: scale(0.98);
+}
+
+input {
+  border: 1px solid #292929;
+}
+
+input:focus {
+  background-color: mintcream;
+  border: 2px solid;
+}
+
+.guest-list {
+  color: #292929;
+}
+
+.assigned-items li {
+  background-color: #fff;
+  color: tomato;
+  font-weight: bold;
+  margin: 0.45em 0;
+  color: 292929;
+}
+
+.guest-list,
+.assigned-items {
+  width: 100%;
+  list-style: none;
+  padding: 0;
+}
+
+.guest-list li,
+.assigned-items li {
+  padding: 0.5em 0;
+}
+
+.items-list-container {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 1em 0;
+}
+.assigned-items {
+  width: 100%;
+  max-width: 400px;
+}
+
+footer {
+  width: 100%;
+  padding: 2em 0;
+}
+@media screen and (min-width: 800px) {
+  .container {
+    justify-content: space-between;
+  }
+
+  .guest-list {
+    width: 70%;
+  }
+}
