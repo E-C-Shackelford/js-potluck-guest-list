@@ -119,4 +119,6 @@ const assignItems = function () {
 
 assignButton.addEventListener("click", function () {
   assignItems();
+  // disable the button once the loop completes (prevent Assign Dishes button from assigning dishes a second time if clicked again)
+  assignButton.disabled = true;
 });
