@@ -108,6 +108,10 @@ const assignItems = function () {
     // use guest.innerText to access the name inside the li element because if you instead just use guest without innerText, you’d grab the actual list element instead of the text
     listItem.innerText = `${guest.innerText} is bringing ${randomPotluckItem}.`;
     assignedItems.append(listItem);
+
+    // prevent assigning duplicate items
+    // remove the item at the randomPotluckIndex (inside the method) so it won’t be assigned to another guest
+    potluckItems.splice(randomPotluckIndex, 1);
   }
 };
 
