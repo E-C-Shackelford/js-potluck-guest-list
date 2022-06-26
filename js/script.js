@@ -110,3 +110,9 @@ const assignItems = function () {
     assignedItems.append(listItem);
   }
 };
+
+// ***** add an event listener & update potluckItems array *****
+
+assignButton.addEventListener("click", function () {
+  assignItems();
+});
